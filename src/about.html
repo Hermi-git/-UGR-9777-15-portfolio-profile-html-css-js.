@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
 
 
     <title>About Me | Hermela</title>
@@ -13,39 +18,51 @@
     <!-- Header Section -->
     <header>
         <div class="container">
-            <div class="logo">
+            <a href="#" class="logo">
                 <img src="./images/Logo.png" alt="H">
-            </div>
+            </a>
+
             <nav>
-                <ul>
-                    <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+                <ul class="nav-list">
+                    <li><a href="home.html" class="active"><i class="fas fa-home"></i> Home</a></li>
                     <li><a href="about.html"><i class="fas fa-user"></i> About Me</a></li>
                     <li><a href="resume.html"><i class="fas fa-file-alt"></i> Resume</a></li>
                     <li><a href="project.html"><i class="fas fa-briefcase"></i> Projects</a></li>
                     <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact Me</a></li>
                 </ul>
             </nav>
-            <button class="hire-me">Hire Me</button>
-        </div>
+
+             
+            <div>
+                <!-- Menu Icon for Mobile -->
+            <button class="hire-me"  id="hire-me-email-button"  >Hire Me</button>
+           <div class="menu-icon" id="menu-icon">
+             <i class="fas fa-bars"></i>
+            </div>
+            </div>
+
+           </div>
+     
     </header>
 
     <!-- Main Body Section -->
     <main>
         <!-- About Me Section -->
         <article class="about-me">
-            <h1>About Me</h1>
-            <div class="about-container">
-                <figure>
-                    <img src="./images/photo_me.jpg" alt="Hermela Andargie" class="profile-picture">
-                    <figcaption>Hermela Andargie</figcaption>
-                </figure>
-                <div class="bio">
-                    <p>
-                        I’m <strong>Hermela Andargie</strong>, a dedicated software engineering student passionate about innovation and solving real-world problems through technology. Guided by faith and resilience, I strive to deeply understand challenges and create meaningful solutions. With a goal to bridge technological gaps between Africa and developed nations, I aspire to become an international developer making a global impact. I thrive on exploring new technologies, collaborating on impactful projects, and pushing creative boundaries.
-                    </p>
-                </div>
-            </div>
-        </article>
+    <h1>About Me</h1>
+    <div class="about-container">
+        <figure class="profile">
+            <img src="./images/photo_me.jpg" alt="Hermela Andargie" class="profile-picture">
+            <figcaption>Hermela Andargie</figcaption>
+        </figure>
+        <div class="bio">
+            <p>
+                I’m <strong>Hermela Andargie</strong>, a dedicated software engineering student passionate about innovation and solving real-world problems through technology. Guided by faith and resilience, I strive to deeply understand challenges and create meaningful solutions. With a goal to bridge technological gaps between Africa and developed nations, I aspire to become an international developer making a global impact. I thrive on exploring new technologies, collaborating on impactful projects, and pushing creative boundaries.
+            </p>
+        </div>
+    </div>
+</article>
+
 
         <!-- Hobbies Section -->
         <article class="hobbies">
@@ -77,13 +94,13 @@
             </p>
         </article>
     </main>
-
+    <hr/>
     <!-- Footer Section -->
     <footer>
         <div class="container">
-            <div class="logo">
+            <a href="#" class="logo">
                 <img src="./images/Logo.png" alt="H">
-            </div>
+            </a>
             <nav>
                 <ul>
                     <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
@@ -101,5 +118,6 @@
             <p>&copy; 2024 Hermela Andargie. All rights reserved.</p>
         </div>
     </footer>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
