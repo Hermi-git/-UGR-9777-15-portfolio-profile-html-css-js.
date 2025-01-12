@@ -253,7 +253,7 @@ footer p {
 
 /* Media Queries */
 @media (min-width: 768px) {
-    /* Intro Section */
+    
     main .intro__container {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -261,14 +261,14 @@ footer p {
         align-items: center;
     }
 
-    /* Image on the right */
+    
     main .intro__container img {
         margin: 0;
         align-self: center; 
         justify-self: end; 
     }
 
-    /* Text on the left */
+   
     .intro__text {
         align-self: center; 
         justify-self: start;
@@ -288,7 +288,7 @@ footer p {
 
 /* Desktop view (min-width: 1024px) */
 @media (min-width: 1024px) {
-    /* Header Container */
+   
     header .container {
         padding: 0 3rem; 
     }
@@ -296,7 +296,6 @@ footer p {
         display: block;
     }
 
-    /* Footer */
     footer {
         padding: 2rem;
     }
@@ -316,7 +315,6 @@ footer p {
         font-size: 1rem; 
     }
 
-    /* Adjust Layout for Larger Screens */
     .container {
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
         gap: 1rem;
@@ -505,7 +503,6 @@ main {
         margin-top: 20px;
     }
 
-    /* Hobbies Section */
     .hobby-container {
         grid-template-columns: 1fr; 
     }
@@ -513,18 +510,14 @@ main {
 
 /* Tablet (min-width: 768px) and max-width: 1024px */
 @media (min-width: 768px) and (max-width: 1024px) {
-    /* Hobbies Section */
     .hobby-container {
         grid-template-columns: repeat(2, 1fr); 
         gap: 20px;
     }
 
-    /* Position the 3rd hobby under the first one */
     .hobby:nth-child(3) {
         grid-column: span 1; 
     }
-
-    /* Optional: Adjust the width for better alignment */
     .hobby:nth-child(2) {
         grid-column: span 1;
     }
@@ -532,7 +525,7 @@ main {
 
 /* Desktop (min-width: 1024px) */
 @media (min-width: 1024px) {
-    /* Hobbies Section */
+    
     .hobby-container {
         grid-template-columns: repeat(3, 1fr); 
         gap: 20px;
@@ -623,7 +616,7 @@ section#technical-proficiencies li {
 
 /* Mobile-First Adjustments */
 @media (min-width: 768px) {
-    /* Tablet View */
+   
     main {
         flex-direction: column;
         gap: 3rem;
@@ -649,7 +642,7 @@ section#technical-proficiencies li {
 }
 
 @media (min-width: 1024px) {
-    /* Desktop View */
+    
     main {
         max-width: 1200px;
         margin: 0 auto;
@@ -674,14 +667,12 @@ section#technical-proficiencies li {
     color: var(--text-strong);
 }
 
-/* Project List */
 .project-list {
     display: flex;
     flex-direction: column;
     gap: 2rem; 
 }
 
-/* Individual Project */
 .project {
     background-color: #1e1e1e; 
     border-radius: 10px;
